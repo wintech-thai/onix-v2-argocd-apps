@@ -29,7 +29,7 @@ dependencies:
 
   ### Onix API ###
   - name: "generic-app"
-    alias: erp-api
-    condition: erp-api.enabled
+    alias: onix-api
+    condition: onix-api.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
