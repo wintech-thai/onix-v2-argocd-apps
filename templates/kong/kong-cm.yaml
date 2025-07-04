@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kong-config
+data:
+  kong.yml: |
+    _format_version: "3.0"
+    _transform: true
+
+    services:
+    - name: onix-api
+      url: http://onix-{{ .Values.envAlias }}-onix-api/
+      routes:
+      - name: onix-api-v1
+        strip_path: false
+        paths:
+        - /
+      #- name: onix-api-swagger
+      #  strip_path: true
+      #  paths:
+      #  - /v1/swagger/
+
+    #plugins:
+    #- name: http-log
+    #  service: onix-api
+    #  config:
+    #    http_endpoint: http://logstash-http-to-kafka.analytic-{{ .Values.envAlias }}.svc.cluster.local:8080/
+    #    method: POST
+    #    timeout: 1000
+    #    keepalive: 1000
+    #    flush_timeout: 2
+    #    retry_count: 15

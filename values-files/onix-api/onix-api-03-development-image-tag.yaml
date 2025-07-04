@@ -1,0 +1,5 @@
+
+onix-api:
+  pods:
+    image:
+      tag: "develop-25c8f2c"
