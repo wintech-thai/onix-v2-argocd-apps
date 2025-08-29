@@ -21,3 +21,11 @@ kong:
     type: ClusterIP
     http:
       enabled: true
+
+  volumeMounts:
+    - mountPath: /kong_prefix
+      name: kong-prefix
+
+  volumes:
+    - name: kong-prefix
+      emptyDir: {}
