@@ -1,3 +1,4 @@
 ---
 envAlias: development
 domainOnixAPI: aldamex-dev.please-scan.com
+envGroup: dev

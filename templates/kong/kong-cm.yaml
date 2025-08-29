@@ -9,7 +9,7 @@ data:
 
     services:
     - name: onix-api
-      url: http://onix-{{ .Values.envAlias }}-onix-api/
+      url: http://onix-v2-{{ .Values.envGroup }}-onix-api/
       routes:
       - name: onix-api-v1
         strip_path: false
