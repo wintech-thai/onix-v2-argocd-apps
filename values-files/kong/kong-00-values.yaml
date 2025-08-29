@@ -1,5 +1,5 @@
 kong:
-  enabled: true
+  enabled: false # TODO : Will need to fix Kong crash loop back  
   fullnameOverride: kong
   proxy:
     type: ClusterIP
@@ -9,6 +9,8 @@ kong:
 
   env:
     database: "off"
+    #KONG_ADMIN_LISTEN: "0.0.0.0:8444 ssl"
+    #KONG_PROXY_LISTEN: "0.0.0.0:8000, 0.0.0.0:8443 ssl"
 
   customEnv:
     DUMMY: "002" #Update this when Kong configuration is changed in order to restart the pods
@@ -18,9 +20,9 @@ kong:
 
   admin:
     enabled: false
-    type: ClusterIP
-    http:
-      enabled: false
+    #type: ClusterIP
+    #http:
+    #  enabled: false
 
   volumeMounts:
     - mountPath: /kong_prefix
