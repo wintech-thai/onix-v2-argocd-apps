@@ -19,6 +19,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: kong-proxy
+                name: onix-v2-{{ .Values.envGroup }}-onix-api #TODO : Change this to Kong service instead
                 port:
                   number: 80

@@ -1,5 +1,5 @@
 kong:
-  enabled: true
+  enabled: false # TODO : Will need to fix Kong crash loop back  
   fullnameOverride: kong
   proxy:
     type: ClusterIP
