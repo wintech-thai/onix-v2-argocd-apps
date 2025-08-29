@@ -20,7 +20,7 @@ kong:
     enabled: false
     type: ClusterIP
     http:
-      enabled: true
+      enabled: false
 
   volumeMounts:
     - mountPath: /kong_prefix
