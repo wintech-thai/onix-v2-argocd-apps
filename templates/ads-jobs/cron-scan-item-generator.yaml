@@ -1,0 +1,52 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: scan-item-generator
+spec:
+  # kubectl create job --from=cronjob/scan-item-generator scan-item-generator-001 -n onix-jobs
+  suspend: true
+  schedule: "1 * * * *"
+  jobTemplate:
+    spec:
+      ttlSecondsAfterFinished: 3600
+      template:
+        spec:
+          containers:
+          - name: cron-script
+            image: asia-southeast1-docker.pkg.dev/its-artifact-commons/onix-v2/onix-v2-jobs:{{ .Values.adsJob.imageTag }}
+            imagePullPolicy: IfNotPresent
+            command:
+            - ruby
+            args:
+            - /scripts/scan-item-generator.rb
+            env:
+            - name: REDIS_HOST
+              value: redis-master
+
+            - name: REDIS_PORT
+              value: "6379"
+
+            - name: REDIS_PASSWORD
+              value: "anything-notuse"
+
+            - name: SCAN_ITEM_ORG
+              value: {{ .Values.onix-jobs.scanItemOrg }}
+
+            - name: SCAN_ITEM_BUCKET
+              value: {{ .Values.onix-jobs.scanItemBucket }}
+
+            - name: SCAN_ITEM_COUNT
+              value: {{ .Values.onix-jobs.scanItemCount }}
+
+            - name: SCAN_ITEM_URL
+              value: {{ .Values.onix-jobs.scanItemUrl }}
+
+            volumeMounts:
+            - name: temp-dir
+              mountPath: /data/temp
+
+          restartPolicy: OnFailure
+
+          volumes:
+          - name: temp-dir
+            emptyDir: {}
