@@ -1,0 +1,5 @@
+onix-jobs:
+  scanItemBucket: nap-genuine-dev
+  scanItemOrg: default
+  scanItemCount: "100"
+  scanItemUrl: 'https://aldamex-dev.please-scan.com/org/{VAR_ORG}/VerifyScanItem/{VAR_SERIAL}/{VAR_PIN}'
