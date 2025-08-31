@@ -1,0 +1,5 @@
+
+onix-web-scan:
+  pods:
+    image:
+      tag: "<<image-tag>>"
