@@ -1,4 +1,4 @@
-onix-jobs:
+onixJobs:
   scanItemBucket: nap-genuine-prod
   scanItemOrg: default
   scanItemCount: "100"
