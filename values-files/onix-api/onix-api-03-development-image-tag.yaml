@@ -2,4 +2,4 @@
 onix-api:
   pods:
     image:
-      tag: "main-900cdb1"
+      tag: "develop-b0f8650"
