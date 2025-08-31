@@ -13,3 +13,6 @@ onix-web-scan:
     env:
       - name: DUMMY
         value: "001"
+
+      - name: DECRYPTION_KEY
+        value: "xxxxxxx"

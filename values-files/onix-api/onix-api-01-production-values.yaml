@@ -21,6 +21,12 @@ onix-api:
       - name: IsDev
         value: "false"
 
+      - name: ScanItem__RedirectUrl
+        value: "https://aldamex.com/verify"
+
+      - name: ScanItem__SymmetricKey
+        value: "this-is-fake"
+
       - name: PostgreSQL__Host
         value: "postgresql-onix"
 
