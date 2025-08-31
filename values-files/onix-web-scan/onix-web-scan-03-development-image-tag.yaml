@@ -2,4 +2,4 @@
 onix-web-scan:
   pods:
     image:
-      tag: "main-561c7ce"
+      tag: "main-b9bddd3"
