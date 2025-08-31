@@ -30,16 +30,16 @@ spec:
               value: "anything-notuse"
 
             - name: SCAN_ITEM_ORG
-              value: {{ .Values.onixJobs.scanItemOrg }}
+              value: "{{ .Values.onixJobs.scanItemOrg }}"
 
             - name: SCAN_ITEM_BUCKET
-              value: {{ .Values.onixJobs.scanItemBucket }}
+              value: "{{ .Values.onixJobs.scanItemBucket }}"
 
             - name: SCAN_ITEM_COUNT
-              value: {{ .Values.onixJobs.scanItemCount }}
+              value: "{{ .Values.onixJobs.scanItemCount }}"
 
             - name: SCAN_ITEM_URL
-              value: {{ .Values.onixJobs.scanItemUrl }}
+              value: "{{ .Values.onixJobs.scanItemUrl }}"
 
             volumeMounts:
             - name: temp-dir
