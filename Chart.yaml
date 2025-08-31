@@ -33,3 +33,10 @@ dependencies:
     condition: onix-api.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
+
+  ### Onix Web Scan ###
+  - name: "generic-app"
+    alias: onix-web-scan
+    condition: onix-web-scan.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
