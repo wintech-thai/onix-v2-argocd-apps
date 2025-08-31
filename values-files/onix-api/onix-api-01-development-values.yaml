@@ -25,7 +25,18 @@ onix-api:
         value: "https://aldamex.com/verify-dev"
         
       - name: ScanItem__SymmetricKey
-        value: "this-is-fake"
+        valueFrom:
+          secretKeyRef:
+            name: scan-item-secret
+            key: ENCRYPTION_KEY
+            optional: false
+
+      - name: ScanItem__EncryptionIv
+        valueFrom:
+          secretKeyRef:
+            name: scan-item-secret
+            key: ENCRYPTION_IV
+            optional: false
 
       - name: PostgreSQL__Host
         value: "postgresql-onix"
