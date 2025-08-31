@@ -14,5 +14,16 @@ onix-web-scan:
       - name: DUMMY
         value: "001"
 
-      - name: DECRYPTION_KEY
-        value: "xxxxxxx"
+      - name: ENCRYPTION_KEY
+        valueFrom:
+          secretKeyRef:
+            name: scan-item-secret
+            key: ENCRYPTION_KEY
+            optional: false
+
+      - name: ENCRYPTION_IV
+        valueFrom:
+          secretKeyRef:
+            name: scan-item-secret
+            key: ENCRYPTION_IV
+            optional: false
