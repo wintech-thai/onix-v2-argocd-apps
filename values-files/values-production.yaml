@@ -3,4 +3,4 @@ envAlias: production
 domainOnixAPI: aldamex.please-scan.com
 envGroup: prod
 onixWebScanPath: verify
-onixWebScanDomain: products.aldamex.com
+onixWebScanDomain: aldamex.com

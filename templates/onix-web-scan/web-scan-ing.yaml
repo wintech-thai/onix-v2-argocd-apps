@@ -15,7 +15,7 @@ spec:
     - host: {{ .Values.onixWebScanDomain }}
       http:
         paths:
-          - path: /
+          - path: /{{ .Values.onixWebScanPath }}
             pathType: Prefix
             backend:
               service:

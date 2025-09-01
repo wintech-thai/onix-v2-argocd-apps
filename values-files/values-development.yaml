@@ -3,4 +3,4 @@ envAlias: development
 domainOnixAPI: aldamex-dev.please-scan.com
 envGroup: dev
 onixWebScanPath: verify-dev
-onixWebScanDomain: products-dev.aldamex.com
+onixWebScanDomain: aldamex.com
