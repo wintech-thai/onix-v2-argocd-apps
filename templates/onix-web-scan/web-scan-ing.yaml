@@ -25,7 +25,7 @@ spec:
     - host: {{ .Values.onixWebScanDomain }}
       http:
         paths:
-          - path: /scan-static # for static asset
+          - path: /{{ .Values.onixWebScanStaticPath }} # for static asset
             pathType: Prefix
             backend:
               service:
