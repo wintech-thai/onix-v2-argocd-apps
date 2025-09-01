@@ -20,14 +20,24 @@ spec:
             args:
             - /scripts/scan-item-generator.rb
             env:
-            - name: REDIS_HOST
-              value: redis-master
+            - name: PG_HOST
+              value: postgresql-onix
 
-            - name: REDIS_PORT
-              value: "6379"
+            - name: PG_PORT
+              value: "5432"
 
-            - name: REDIS_PASSWORD
-              value: "anything-notuse"
+            - name: PG_USER
+              value: "postgres"
+
+            - name: PG_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: onix-postgres-secret
+                  key: adminPasswordKey
+                  optional: false
+
+            - name: PG_DB
+              value: "onix"
 
             - name: SCAN_ITEM_ORG
               value: "{{ .Values.onixJobs.scanItemOrg }}"
@@ -41,12 +51,29 @@ spec:
             - name: SCAN_ITEM_URL
               value: "{{ .Values.onixJobs.scanItemUrl }}"
 
+            - name: SCAN_ITEM_GCS_PROJECT
+              value: 'nap-devops-prod'
+
+            - name: TEMP_DIR
+              value: '/data/tmp'
+
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: '/secrets/sa.json'
+
             volumeMounts:
             - name: temp-dir
               mountPath: /data/temp
+
+            - name: secrets
+              readOnly: true
+              mountPath: "/secrets"
 
           restartPolicy: OnFailure
 
           volumes:
           - name: temp-dir
             emptyDir: {}
+
+          - name: secrets
+            secret:
+              secretName: gcp-sa-secret
