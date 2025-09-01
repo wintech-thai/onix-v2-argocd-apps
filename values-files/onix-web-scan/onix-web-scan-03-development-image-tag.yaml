@@ -2,4 +2,4 @@
 onix-web-scan:
   pods:
     image:
-      tag: "develop-2af2d0c"
+      tag: "develop-2a35675"
