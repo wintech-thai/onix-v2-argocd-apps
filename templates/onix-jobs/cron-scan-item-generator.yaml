@@ -54,6 +54,9 @@ spec:
             - name: SCAN_ITEM_GCS_PROJECT
               value: 'nap-devops-prod'
 
+            - name: SCAN_ITEM_GROUP
+              value: 'aldamex'
+
             - name: TEMP_DIR
               value: '/data/temp'
 
