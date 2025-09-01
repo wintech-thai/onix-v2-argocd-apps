@@ -2,6 +2,6 @@
 envAlias: development
 domainOnixAPI: aldamex-dev.please-scan.com
 envGroup: dev
-onixWebScanPath: verify-dev
-onixWebScanStaticPath: scan-static-dev
-onixWebScanDomain: aldamex.com
+onixWebScanPath: verify
+onixWebScanStaticPath: scan-static
+onixWebScanDomain: aldamex-web-dev.please-scan.com
