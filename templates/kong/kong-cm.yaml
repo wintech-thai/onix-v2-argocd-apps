@@ -8,25 +8,25 @@ data:
     _transform: true
 
     services:
-    - name: onix-api
+    - name: onix-v2-api
       url: http://onix-v2-{{ .Values.envGroup }}-onix-api/
       routes:
       - name: onix-api-v1
         strip_path: false
         paths:
         - /
-      #- name: onix-api-swagger
-      #  strip_path: true
-      #  paths:
-      #  - /v1/swagger/
+      - name: onix-api-swagger
+        strip_path: true
+        paths:
+        - /v1/swagger/
 
-    #plugins:
-    #- name: http-log
-    #  service: onix-api
-    #  config:
-    #    http_endpoint: http://logstash-http-to-kafka.analytic-{{ .Values.envAlias }}.svc.cluster.local:8080/
-    #    method: POST
-    #    timeout: 1000
-    #    keepalive: 1000
-    #    flush_timeout: 2
-    #    retry_count: 15
+    plugins:
+    - name: http-log
+      service: onix-v2-api
+      config:
+        http_endpoint: http://logstash-http.logstash-soc.svc.cluster.local:8080/
+        method: POST
+        timeout: 1000
+        keepalive: 1000
+        flush_timeout: 2
+        retry_count: 15
