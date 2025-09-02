@@ -5,3 +5,5 @@ envGroup: dev
 onixWebScanPath: verify
 onixWebScanStaticPath: scan-static
 onixWebScanDomain: aldamex-web-dev.please-scan.com
+
+pleaseScanWebDomain: web-dev.please-scan.com

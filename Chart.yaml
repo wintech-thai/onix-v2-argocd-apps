@@ -40,3 +40,10 @@ dependencies:
     condition: onix-web-scan.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
+
+  ### Please Scan ###
+  - name: "generic-app"
+    alias: please-scan-web
+    condition: please-scan-web.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
