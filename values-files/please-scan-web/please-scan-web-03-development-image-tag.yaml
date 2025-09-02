@@ -2,4 +2,4 @@
 please-scan-web:
   pods:
     image:
-      tag: "develop-344f8be"
+      tag: "main-ffac924"
