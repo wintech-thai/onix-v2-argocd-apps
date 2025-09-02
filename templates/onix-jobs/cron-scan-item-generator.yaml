@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: scan-item-generator
 spec:
-  # kubectl create job --from=cronjob/scan-item-generator scan-item-generator-001 -n onix-jobs
+  # kubectl create job --from=cronjob/scan-item-generator scan-item-generator-001 -n onix-v2-production
   suspend: true
   schedule: "1 * * * *"
   jobTemplate:
