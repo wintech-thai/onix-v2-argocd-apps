@@ -11,7 +11,7 @@ kong:
     database: "off"
 
   customEnv:
-    DUMMY: "003" #Update this when Kong configuration is changed in order to restart the pods
+    DUMMY: "004" #Update this when Kong configuration is changed in order to restart the pods
     KONG_ADMIN_LISTEN: '127.0.0.1:8444 http2 ssl'
     KONG_PROXY_LISTEN: "0.0.0.0:8000, 0.0.0.0:8443 http2 ssl"
 
