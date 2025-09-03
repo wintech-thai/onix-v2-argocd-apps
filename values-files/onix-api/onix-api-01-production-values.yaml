@@ -22,7 +22,7 @@ onix-api:
         value: "false"
 
       - name: ScanItem__RedirectUrl
-        value: "https://aldamex.com/verify"
+        value: "https://verify.please-scan.com/verify"
 
       - name: ScanItem__SymmetricKey
         valueFrom:

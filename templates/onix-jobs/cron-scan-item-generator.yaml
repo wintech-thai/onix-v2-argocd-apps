@@ -55,7 +55,7 @@ spec:
               value: 'nap-devops-prod'
 
             - name: SCAN_ITEM_GROUP
-              value: '{{ .Values.envGroup }}/aldamex'
+              value: '{{ .Values.envGroup }}'
 
             - name: TEMP_DIR
               value: '/data/temp'
