@@ -56,3 +56,9 @@ onix-api:
             name: onix-postgres-secret
             key: adminPasswordKey
             optional: false
+
+      - name: Redis__Host
+        value: "redis-master"
+
+      - name: Redis__Port
+        value: "6379"
