@@ -1,6 +1,6 @@
 ---
 envAlias: development
-domainOnixAPI: scan-dev.please-scan.com
+domainOnixAPI: api-dev.please-scan.com
 domainOnixScan: scan-dev.please-scan.com
 envGroup: dev
 onixWebScanPath: verify
