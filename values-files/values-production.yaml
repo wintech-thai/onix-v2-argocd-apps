@@ -1,6 +1,7 @@
 ---
 envAlias: production
 domainOnixAPI: scan.please-scan.com
+domainOnixScan: scan.please-scan.com
 envGroup: prod
 onixWebScanPath: verify
 onixWebScanStaticPath: scan-static

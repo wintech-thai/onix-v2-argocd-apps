@@ -6,17 +6,28 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: HTTP
     nginx.ingress.kubernetes.io/proxy-body-size: 50m
     nginx.org/client-max-body-size: 50m
+    nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   ingressClassName: nginx
   tls:
     - hosts:
-      - {{ .Values.domainOnixAPI }}
+      - {{ .Values.domainOnixScan }}
   rules:
+    - host: {{ .Values.domainOnixScan }}
+      http:
+        paths:
+          - path: /org/.+/Verify/.+
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kong-proxy #onix-v2-{{ .Values.envGroup }}-onix-api
+                port:
+                  number: 80
     - host: {{ .Values.domainOnixAPI }}
       http:
         paths:
-          - path: /
-            pathType: Prefix
+          - path: /api/.+/org/.+
+            pathType: ImplementationSpecific
             backend:
               service:
                 name: kong-proxy #onix-v2-{{ .Values.envGroup }}-onix-api
