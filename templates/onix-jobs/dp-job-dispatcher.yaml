@@ -49,8 +49,9 @@ spec:
         - name: PG_DB
           value: "onix"
 
-        - name: DATA_DIR
-          value: "/data"
+        - name: TEMP_DIR
+          value: '/data/temp'
+
         command:
           - ruby
         args:
