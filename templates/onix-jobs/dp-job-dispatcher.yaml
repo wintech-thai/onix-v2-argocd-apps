@@ -46,6 +46,9 @@ spec:
               key: adminPasswordKey
               optional: false
 
+        - name: PG_DB
+          value: "onix"
+
         - name: DATA_DIR
           value: "/data"
         command:
