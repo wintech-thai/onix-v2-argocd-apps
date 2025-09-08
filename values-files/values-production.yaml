@@ -1,5 +1,6 @@
 ---
 envAlias: production
+envAliasJob: Production
 domainOnixAPI: api.please-scan.com
 domainOnixScan: scan.please-scan.com
 envGroup: prod
