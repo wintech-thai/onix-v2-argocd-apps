@@ -39,6 +39,13 @@ spec:
             - name: PG_DB
               value: "onix"
 
+            - name: MAILGUN_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: mailgun-secret
+                  key: MAILGUN_API_KEY
+                  optional: false
+
             - name: SCAN_ITEM_ORG
               value: "{{ .Values.onixJobs.scanItemOrg }}"
 
