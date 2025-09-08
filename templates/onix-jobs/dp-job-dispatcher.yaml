@@ -69,7 +69,7 @@ spec:
 
         volumeMounts:
         - name: temp-dir
-          mountPath: /data
+          mountPath: /data/temp
 
       volumes:
       - emptyDir: {}
