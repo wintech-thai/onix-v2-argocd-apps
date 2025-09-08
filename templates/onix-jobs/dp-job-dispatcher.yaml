@@ -25,7 +25,7 @@ spec:
           value: "Asia/Bangkok"
 
         - name: REDIS_HOST
-          value: "redis-master.redis.svc.cluster.local"
+          value: "redis-master"
 
         - name: REDIS_PORT
           value: "6379"
