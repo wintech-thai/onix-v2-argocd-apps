@@ -1,5 +1,6 @@
 ---
 envAlias: development
+envAliasJob: Development
 domainOnixAPI: api-dev.please-scan.com
 domainOnixScan: scan-dev.please-scan.com
 envGroup: dev
