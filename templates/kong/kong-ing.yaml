@@ -16,7 +16,7 @@ spec:
     - host: {{ .Values.domainOnixScan }}
       http:
         paths:
-          - path: /org/.+/Verify/.+
+          - path: /org/.+/(Verify|GetProduct)/.+
             pathType: ImplementationSpecific
             backend:
               service:
