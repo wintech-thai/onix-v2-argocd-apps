@@ -14,6 +14,9 @@ onix-api:
       - name: GOOGLE_APPLICATION_CREDENTIALS
         value: '/secrets/sa.json'
 
+      - name: ENV_GROUP
+        value: '{{ .Values.envGroup }}'
+
       # To solve ulimit(128) issue
       - name: DOTNET_USE_POLLING_FILE_WATCHER
         value: "true"
