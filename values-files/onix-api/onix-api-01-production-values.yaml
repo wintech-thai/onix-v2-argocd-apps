@@ -18,7 +18,7 @@ onix-api:
         value: 'onix-v2-artifacts'
 
       - name: ENV_GROUP
-        value: '{{ .Values.envGroup }}'
+        value: 'prod'
 
       # To solve ulimit(128) issue
       - name: DOTNET_USE_POLLING_FILE_WATCHER
