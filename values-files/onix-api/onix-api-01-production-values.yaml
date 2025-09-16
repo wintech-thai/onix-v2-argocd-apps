@@ -11,6 +11,9 @@ onix-api:
         memory: 100Mi
 
     env:
+      - name: GOOGLE_APPLICATION_CREDENTIALS
+        value: '/secrets/sa.json'
+
       # To solve ulimit(128) issue
       - name: DOTNET_USE_POLLING_FILE_WATCHER
         value: "true"

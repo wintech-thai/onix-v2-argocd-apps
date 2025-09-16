@@ -62,7 +62,7 @@ spec:
               value: 'nap-devops-prod'
 
             - name: SCAN_ITEM_GROUP
-              value: '{{ .Values.envGroup }}'
+              value: '{{ .Values.envGroup }}/ScanItems'
 
             - name: TEMP_DIR
               value: '/data/temp'
