@@ -14,6 +14,9 @@ onix-web-scan:
       - name: DUMMY
         value: "001"
 
+      - name: TZ
+        value: "Asia/Bangkok"
+
       - name: ENCRYPTION_KEY
         valueFrom:
           secretKeyRef:
