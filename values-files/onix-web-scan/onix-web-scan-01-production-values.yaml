@@ -27,3 +27,9 @@ onix-web-scan:
             name: scan-item-secret
             key: ENCRYPTION_IV
             optional: false
+
+      - name: ASPNETCORE_ENVIRONMENT
+        value: "Production"
+
+      - name: LOG_ENDPOINT
+        value: "http://logstash-http.logstash-soc.svc.cluster.local:8080"
