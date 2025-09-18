@@ -12,12 +12,21 @@ onix-web-scan:
   pods:
     controller: deployment
 
-    #livenessProbe:
-    #  httpGet:
-    #    path: /v1/api/Authorization/HealthCheck
-    #    port: 8080
-    #  initialDelaySeconds: 20
-    #  periodSeconds: 5
+    readinessProbe:
+      httpGet:
+        path: /health
+        port: 5000
+      initialDelaySeconds: 20
+      periodSeconds: 10
+      timeoutSeconds: 5
+      failureThreshold: 2
+
+    livenessProbe:
+      httpGet:
+        path: /health
+        port: 5000
+      initialDelaySeconds: 20
+      periodSeconds: 10
 
     image:
       name: asia-southeast1-docker.pkg.dev/its-artifact-commons/onix-v2/onix-v2-web-scan
