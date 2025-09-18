@@ -3,3 +3,6 @@ redis:
   architecture: standalone
   auth:
     enabled: false
+
+  image:
+    repository: bitnamilegacy/postgresql

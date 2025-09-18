@@ -6,3 +6,6 @@ postgresql-onix:
     existingSecret: onix-postgres-secret
     secretKeys:
       adminPasswordKey: adminPasswordKey
+
+  image:
+    repository: bitnamilegacy/postgresql
