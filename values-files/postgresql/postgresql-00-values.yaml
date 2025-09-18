@@ -9,3 +9,7 @@ postgresql-onix:
 
   image:
     repository: bitnamilegacy/postgresql
+
+  global:
+    security:
+      allowInsecureImages: true
