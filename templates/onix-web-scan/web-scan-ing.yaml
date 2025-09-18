@@ -32,3 +32,13 @@ spec:
                 name: onix-v2-{{ .Values.envGroup }}-onix-web-scan
                 port:
                   number: 80
+    - host: {{ .Values.onixWebScanDomain }}
+      http:
+        paths:
+          - path: /health
+            pathType: Prefix
+            backend:
+              service:
+                name: onix-v2-{{ .Values.envGroup }}-onix-web-scan
+                port:
+                  number: 80
