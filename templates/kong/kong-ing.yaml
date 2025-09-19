@@ -26,7 +26,7 @@ spec:
     - host: {{ .Values.domainOnixScan }}
       http:
         paths:
-          - path: /org/.+/(Verify|GetProduct)/.+
+          - path: /org/.+/.+/.+
             pathType: ImplementationSpecific
             backend:
               service:
@@ -53,13 +53,4 @@ spec:
                 name: kong-proxy #onix-v2-{{ .Values.envGroup }}-onix-api
                 port:
                   number: 80
-    - host: {{ .Values.domainOnixAPI }}
-      http:
-        paths:
-          - path: /org/.+/VerifyScanItem/.+
-            pathType: ImplementationSpecific
-            backend:
-              service:
-                name: kong-proxy #onix-v2-{{ .Values.envGroup }}-onix-api
-                port:
-                  number: 80
+
