@@ -1,9 +1,9 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: cron-email-send
+  name: simple-email-send
 spec:
-  # kubectl create job --from=cronjob/cron-email-send cron-email-send-001 -n onix-v2-production
+  # kubectl create job --from=cronjob/simple-email-send simple-email-send-001 -n onix-v2-production
   suspend: true
   schedule: "1 * * * *"
   jobTemplate:
