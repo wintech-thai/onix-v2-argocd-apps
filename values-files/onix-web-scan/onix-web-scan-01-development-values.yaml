@@ -17,6 +17,12 @@ onix-web-scan:
       - name: TZ
         value: "Asia/Bangkok"
 
+      - name: REDIS_HOST
+        value: "redis-master"
+
+      - name: REDIS_PORT
+        value: "6379"
+
       - name: ENCRYPTION_KEY
         valueFrom:
           secretKeyRef:
