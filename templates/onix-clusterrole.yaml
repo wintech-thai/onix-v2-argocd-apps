@@ -10,4 +10,4 @@ rules:
   
 - apiGroups: ["batch"]
   resources: ["cronjobs", "jobs"]
-  verbs: ["get", "create", "list"]
+  verbs: ["get", "create", "list", "patch"]
