@@ -41,6 +41,13 @@ dependencies:
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
 
+  ### Onix Console ###
+  - name: "generic-app"
+    alias: onix-console
+    condition: onix-console.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
+
   ### Please Scan ###
   - name: "generic-app"
     alias: please-scan-web
