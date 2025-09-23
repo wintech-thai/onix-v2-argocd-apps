@@ -2,4 +2,4 @@
 please-scan-web:
   pods:
     image:
-      tag: "develop-be1074a"
+      tag: "main-32468d3"
