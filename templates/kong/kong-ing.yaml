@@ -53,4 +53,14 @@ spec:
                 name: kong-proxy #onix-v2-{{ .Values.envGroup }}-onix-api
                 port:
                   number: 80
+    - host: {{ .Values.domainOnixAPI }}
+      http:
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kong-proxy #onix-v2-{{ .Values.envGroup }}-onix-api
+                port:
+                  number: 80
 
