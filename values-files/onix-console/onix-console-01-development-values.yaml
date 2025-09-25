@@ -13,3 +13,7 @@ onix-console:
     env:
       - name: ENV_GROUP
         value: 'dev'
+
+      - name: NEXT_PUBLIC_API_URL
+        value: 'https://api-dev.please-scan.com'
+  
