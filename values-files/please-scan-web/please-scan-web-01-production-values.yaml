@@ -13,3 +13,6 @@ please-scan-web:
     env:
       - name: DUMMY
         value: "001"
+
+      - name: NEXT_PUBLIC_CONSOLE_URL
+        value: 'https://console-dev.please-scan.com'
