@@ -15,4 +15,4 @@ please-scan-web:
         value: "001"
 
       - name: NEXT_PUBLIC_CONSOLE_URL
-        value: 'https://console-dev.please-scan.com'
+        value: 'https://console.please-scan.com'
