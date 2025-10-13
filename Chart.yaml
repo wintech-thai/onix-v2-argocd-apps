@@ -48,6 +48,13 @@ dependencies:
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
 
+  ### Onix Register ###
+  - name: "generic-app"
+    alias: onix-register
+    condition: onix-register.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
+
   ### Please Scan ###
   - name: "generic-app"
     alias: please-scan-web
