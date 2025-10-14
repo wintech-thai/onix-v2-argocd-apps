@@ -1,0 +1,5 @@
+
+onix-register:
+  pods:
+    image:
+      tag: "<<image-tag>>"
