@@ -41,7 +41,7 @@ onix-web-scan:
         value: "Production"
 
       - name: NODE_ENV
-        value: "Production"
+        value: "production"
 
       - name: LOG_ENDPOINT
         value: "http://logstash-http.logstash-soc.svc.cluster.local:8080"
