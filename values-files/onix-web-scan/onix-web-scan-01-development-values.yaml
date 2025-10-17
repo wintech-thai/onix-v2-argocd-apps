@@ -37,7 +37,10 @@ onix-web-scan:
             key: ENCRYPTION_IV
             optional: false
 
-      - name: ASPNETCORE_ENVIRONMENT
+      - name: ASPNETCORE_ENVIRONMENT #Soon to be removed
+        value: "Development"
+
+      - name: NODE_ENV
         value: "Development"
 
       - name: LOG_ENDPOINT
