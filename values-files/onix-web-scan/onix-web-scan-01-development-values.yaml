@@ -43,6 +43,9 @@ onix-web-scan:
       - name: NODE_ENV
         value: "development"
 
+      - name: RUNTIME_ENV
+        value: "development"
+
       - name: LOG_ENDPOINT
         value: "http://logstash-http.logstash-soc.svc.cluster.local:8080"
 
