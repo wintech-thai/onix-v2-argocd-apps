@@ -2,4 +2,4 @@
 please-scan-web:
   pods:
     image:
-      tag: "main-bbc9616"
+      tag: "develop-08b1b26"
