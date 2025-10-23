@@ -2,4 +2,4 @@
 onix-console:
   pods:
     image:
-      tag: "develop-481ab8f"
+      tag: "develop-fb53568"
