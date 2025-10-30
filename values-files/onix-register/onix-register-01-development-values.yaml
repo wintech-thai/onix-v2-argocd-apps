@@ -14,6 +14,17 @@ onix-register:
       - name: ENV_GROUP
         value: 'dev'
 
+      - name: NODE_ENV
+        value: "development"
+
+      - name: RUNTIME_ENV
+        value: "development"
+
       - name: NEXT_PUBLIC_API_URL
         value: 'https://api-dev.please-scan.com'
-  
+
+      - name: LOG_ENDPOINT
+        value: "http://logstash-http.logstash-soc.svc.cluster.local:8080"
+
+      - name: NEXT_PUBLIC_LOG_ENDPOINT
+        value: "http://logstash-http.logstash-soc.svc.cluster.local:8080"
