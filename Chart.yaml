@@ -48,6 +48,13 @@ dependencies:
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
 
+  ### Onix Admin ###
+  - name: "generic-app"
+    alias: onix-admin
+    condition: onix-admin.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
+
   ### Onix Register ###
   - name: "generic-app"
     alias: onix-register

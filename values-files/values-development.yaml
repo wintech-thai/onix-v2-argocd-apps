@@ -9,6 +9,7 @@ onixWebScanStaticPath: scan-static
 onixWebScanDomain: verify-dev.please-scan.com
 onixConsoleDomain: console-dev.please-scan.com
 onixRegisterDomain: register-dev.please-scan.com
+onixAdminDomain: admin-dev.please-scan.com
 
 pleaseScanWebDomain: web-dev.please-scan.com
 devHubsWebDomain: web-dev.dev-hubs.com
