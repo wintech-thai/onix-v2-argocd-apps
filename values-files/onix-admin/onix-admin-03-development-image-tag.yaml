@@ -2,4 +2,4 @@
 onix-admin:
   pods:
     image:
-      tag: "develop-03670e1"
+      tag: "main-e2a9721"
