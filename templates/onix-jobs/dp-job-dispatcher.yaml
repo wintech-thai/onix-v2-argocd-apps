@@ -53,6 +53,9 @@ spec:
         - name: TEMP_DIR
           value: '/data/temp'
 
+        - name: API_ENDPOINT
+          value: "http://onix-v2-{{ .Values.envGroup }}-onix-api"
+
         command:
           - ruby
         args:
