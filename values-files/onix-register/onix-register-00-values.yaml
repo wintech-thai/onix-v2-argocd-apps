@@ -44,6 +44,6 @@ onix-register:
     enabled: true
     ports:
       - port: 80
-        targetPort: 80 #Will change to 3000 if needed
+        targetPort: 5000
         protocol: TCP
         name: http
