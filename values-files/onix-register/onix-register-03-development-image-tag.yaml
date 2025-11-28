@@ -2,4 +2,4 @@
 onix-register:
   pods:
     image:
-      tag: "main-482253c"
+      tag: "develop-0045823"
