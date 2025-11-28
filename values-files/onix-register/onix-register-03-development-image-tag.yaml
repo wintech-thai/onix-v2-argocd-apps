@@ -2,4 +2,4 @@
 onix-register:
   pods:
     image:
-      tag: "develop-8722c30"
+      tag: "develop-e733f1a"
