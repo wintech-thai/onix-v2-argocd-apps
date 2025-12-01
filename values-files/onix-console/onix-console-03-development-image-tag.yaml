@@ -2,4 +2,4 @@
 onix-console:
   pods:
     image:
-      tag: "develop-ae2cb09"
+      tag: "develop-858badf"
