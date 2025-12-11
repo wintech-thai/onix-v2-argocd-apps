@@ -17,4 +17,4 @@ postgresql-onix:
   primary:
     persistence:
       enabled: true
-      size: "{{ .Values.pgDiskSize }}"
+      size: 100Gi
