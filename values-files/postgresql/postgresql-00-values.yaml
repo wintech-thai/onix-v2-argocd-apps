@@ -13,3 +13,8 @@ postgresql-onix:
   global:
     security:
       allowInsecureImages: true
+
+  primary:
+    persistence:
+      enabled: true
+      size: "{{ .Values.pgDiskSize }}"

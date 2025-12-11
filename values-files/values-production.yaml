@@ -13,3 +13,5 @@ onixAdminDomain: admin.please-scan.com
 
 pleaseScanWebDomain: please-scan.com
 devHubsWebDomain: dev-hubs.com
+
+pgDiskSize: 100Gi
