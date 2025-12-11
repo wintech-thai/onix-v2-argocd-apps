@@ -2,4 +2,4 @@
 onix-member:
   pods:
     image:
-      tag: "develop-c690e67"
+      tag: "main-348fff3"
