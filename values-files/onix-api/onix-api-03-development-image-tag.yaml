@@ -2,4 +2,4 @@
 onix-api:
   pods:
     image:
-      tag: "main-beacf2d"
+      tag: "develop-8709720"
