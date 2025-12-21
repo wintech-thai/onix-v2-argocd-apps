@@ -18,3 +18,11 @@ postgresql-onix:
     persistence:
       enabled: true
       size: 100Gi
+
+    resources:
+      requests:
+        memory: "1Gi"
+        cpu: "300m"
+      limits:
+        memory: "2Gi"
+        cpu: "1"
