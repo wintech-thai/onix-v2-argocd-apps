@@ -2,4 +2,4 @@
 onix-web-scan:
   pods:
     image:
-      tag: "develop-fcb74cd"
+      tag: "develop-3068aeb"
