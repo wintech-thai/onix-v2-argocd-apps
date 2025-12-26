@@ -2,4 +2,4 @@
 please-scan-web:
   pods:
     image:
-      tag: "develop-3bd5449"
+      tag: "main-91f2d11"
