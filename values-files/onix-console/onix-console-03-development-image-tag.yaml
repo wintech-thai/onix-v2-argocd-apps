@@ -2,4 +2,4 @@
 onix-console:
   pods:
     image:
-      tag: "develop-7e51b83"
+      tag: "main-a7b3543"
