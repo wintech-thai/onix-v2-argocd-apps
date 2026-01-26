@@ -2,4 +2,4 @@
 onix-api:
   pods:
     image:
-      tag: "main-fedeb19"
+      tag: "develop-d940886"
