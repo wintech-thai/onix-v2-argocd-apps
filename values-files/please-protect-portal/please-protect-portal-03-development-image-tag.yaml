@@ -2,4 +2,4 @@
 please-protect-portal:
   pods:
     image:
-      tag: "develop-4695395"
+      tag: "main-941f3d2"
