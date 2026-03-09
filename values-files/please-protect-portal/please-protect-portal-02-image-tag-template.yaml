@@ -1,0 +1,5 @@
+
+please-protect-portal:
+  pods:
+    image:
+      tag: "<<image-tag>>"

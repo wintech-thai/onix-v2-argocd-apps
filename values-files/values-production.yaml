@@ -12,6 +12,9 @@ onixRegisterDomain: register.please-scan.com
 onixAdminDomain: admin.please-scan.com
 onixMemberDomain: member.please-scan.com
 
+pleaseProtectPortalDomain: please-protect.com
+pleaseProtectCenterDomain: center.please-protect.com
+
 pleaseScanWebDomain: please-scan.com
 devHubsWebDomain: dev-hubs.com
 
