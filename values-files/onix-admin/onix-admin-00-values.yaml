@@ -1,6 +1,6 @@
 
 onix-admin:
-  enabled: true
+  enabled: false #ยังไม่ใช้เพื่อประหยัดทรัพยากร
   nameOverride: onix-admin
 
   ingress:

@@ -1,6 +1,6 @@
 
 onix-member:
-  enabled: true
+  enabled: false #ยังไม่ใช้เพื่อประหยัดทรัพยากร
   nameOverride: onix-member
 
   ingress:
