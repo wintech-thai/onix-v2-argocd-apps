@@ -82,3 +82,17 @@ dependencies:
     condition: dev-hubs-web.enabled
     repository: "https://charts.visonneau.fr/"
     version: "0.0.14"
+
+  ### Please Protect Portal ###
+  - name: "generic-app"
+    alias: please-protect-portal
+    condition: please-protect-portal.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
+
+  ### Please Protect Center ###
+  - name: "generic-app"
+    alias: please-protect-center
+    condition: please-protect-center.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"

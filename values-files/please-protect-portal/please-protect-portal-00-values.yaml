@@ -1,0 +1,31 @@
+
+please-protect-portal:
+  enabled: true
+  nameOverride: please-protect-portal
+
+  ingress:
+    enabled: false
+
+  podDisruptionBudget:
+    enabled: false
+
+  pods:
+    controller: deployment
+
+    #livenessProbe:
+    #  httpGet:
+    #    path: /v1/api/Authorization/HealthCheck
+    #    port: 8080
+    #  initialDelaySeconds: 20
+    #  periodSeconds: 5
+
+    image:
+      name: asia-southeast1-docker.pkg.dev/its-artifact-commons/please-protect/please-protect-portal
+
+  service:
+    enabled: true
+    ports:
+      - port: 80
+        targetPort: 3000
+        protocol: TCP
+        name: http
