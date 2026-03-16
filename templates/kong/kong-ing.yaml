@@ -64,3 +64,14 @@ spec:
                 port:
                   number: 80
 
+    # Please-Protect
+    - host: {{ .Values.domainOnixPpAPI }}
+      http:
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: kong-proxy #onix-v2-{{ .Values.envGroup }}-onix-api
+                port:
+                  number: 80

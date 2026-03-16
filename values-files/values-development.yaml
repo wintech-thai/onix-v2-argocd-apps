@@ -3,6 +3,9 @@ envAlias: development
 envAliasJob: Development
 domainOnixAPI: api-dev.please-scan.com
 domainOnixScan: scan-dev.please-scan.com
+
+domainOnixPpAPI: api-dev.please-protect.com
+
 envGroup: dev
 onixWebScanPath: verify
 onixWebScanStaticPath: scan-static
