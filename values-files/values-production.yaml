@@ -3,6 +3,9 @@ envAlias: production
 envAliasJob: Production
 domainOnixAPI: api.please-scan.com
 domainOnixScan: scan.please-scan.com
+
+domainOnixPpAPI: api.please-protect.com
+
 envGroup: prod
 onixWebScanPath: verify
 onixWebScanStaticPath: scan-static
