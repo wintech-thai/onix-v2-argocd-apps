@@ -2,4 +2,4 @@
 please-protect-center:
   pods:
     image:
-      tag: "develop-a07a2da"
+      tag: "develop-ca20da4"
