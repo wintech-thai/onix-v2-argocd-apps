@@ -23,6 +23,9 @@ please-protect-center:
       - name: NEXT_PUBLIC_API_URL
         value: 'https://api.please-protect.com'
 
+      - name: BACKEND_URL
+        value: 'https://api.please-protect.com'
+
       - name: NEXT_PUBLIC_PROVIDER_URL
         value: 'https://dev-hubs.com'
 
