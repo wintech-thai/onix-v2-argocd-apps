@@ -2,4 +2,4 @@
 please-protect-center:
   pods:
     image:
-      tag: "develop-3136b33"
+      tag: "develop-df599d5"
