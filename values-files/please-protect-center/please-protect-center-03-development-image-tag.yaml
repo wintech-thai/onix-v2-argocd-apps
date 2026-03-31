@@ -2,4 +2,4 @@
 please-protect-center:
   pods:
     image:
-      tag: "develop-82ac18d"
+      tag: "main-6e0ed38"
