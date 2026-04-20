@@ -2,4 +2,4 @@
 dev-hubs-web:
   pods:
     image:
-      tag: "develop-5d68311"
+      tag: "develop-056a5ce"
