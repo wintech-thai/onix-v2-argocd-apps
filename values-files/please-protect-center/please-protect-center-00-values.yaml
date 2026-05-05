@@ -1,6 +1,6 @@
 
 please-protect-center:
-  enabled: true
+  enabled: false # ย้ายไป on-premise แทน
   nameOverride: please-protect-center
 
   ingress:
