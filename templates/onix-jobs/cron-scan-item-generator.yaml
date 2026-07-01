@@ -39,12 +39,20 @@ spec:
             - name: PG_DB
               value: "onix"
 
-            - name: MAILGUN_API_KEY
+            - name: SMTP_USER
               valueFrom:
                 secretKeyRef:
-                  name: mailgun-secret
-                  key: MAILGUN_API_KEY
+                  name: google-smtp-secret
+                  key: SMTP_USER
                   optional: false
+
+            - name: SMTP_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: google-smtp-secret
+                  key: SMTP_PASSWORD
+                  optional: false
+
 
             - name: SCAN_ITEM_ORG
               value: "{{ .Values.onixJobs.scanItemOrg }}"
