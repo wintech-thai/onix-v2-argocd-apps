@@ -42,14 +42,14 @@ spec:
             - name: SMTP_USER
               valueFrom:
                 secretKeyRef:
-                  name: google-smtp-secret
+                  name: smtp-secret
                   key: SMTP_USER
                   optional: false
 
             - name: SMTP_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: google-smtp-secret
+                  name: smtp-secret
                   key: SMTP_PASSWORD
                   optional: false
 
