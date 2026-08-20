@@ -1,6 +1,6 @@
 
 please-protect-portal:
-  enabled: true
+  enabled: false
   nameOverride: please-protect-portal
 
   ingress:
