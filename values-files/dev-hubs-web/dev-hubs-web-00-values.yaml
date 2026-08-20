@@ -1,6 +1,6 @@
 
 dev-hubs-web:
-  enabled: true
+  enabled: false
   nameOverride: dev-hubs-web
 
   ingress:
