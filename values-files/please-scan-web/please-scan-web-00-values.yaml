@@ -1,6 +1,6 @@
 
 please-scan-web:
-  enabled: true
+  enabled: false
   nameOverride: please-scan-web
 
   ingress:
