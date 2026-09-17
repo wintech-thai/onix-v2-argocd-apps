@@ -1,6 +1,6 @@
 
 onix-web-scan:
-  enabled: true
+  enabled: false
   nameOverride: onix-web-scan
 
   ingress:

@@ -1,6 +1,6 @@
 
 onix-register:
-  enabled: true
+  enabled: false
   nameOverride: onix-register
 
   ingress:
