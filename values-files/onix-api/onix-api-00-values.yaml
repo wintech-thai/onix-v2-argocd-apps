@@ -1,6 +1,6 @@
 
 onix-api:
-  enabled: true
+  enabled: false
   nameOverride: onix-api
 
   ingress:

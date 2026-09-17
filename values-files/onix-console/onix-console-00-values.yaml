@@ -1,6 +1,6 @@
 
 onix-console:
-  enabled: true
+  enabled: false
   nameOverride: onix-console
 
   ingress:
