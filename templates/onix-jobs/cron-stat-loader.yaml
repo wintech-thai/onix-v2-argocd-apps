@@ -4,7 +4,7 @@ metadata:
   name: stat-loader
 spec:
   # kubectl create job --from=cronjob/stat-loader stat-loader-001 -n onix-v2-production
-  suspend: false
+  suspend: true
   schedule: "55 * * * *" # ทำงานที่นาที 55 ทุก ๆ ชั่วโมง
   jobTemplate:
     spec:

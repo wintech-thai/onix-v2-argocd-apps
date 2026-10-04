@@ -4,7 +4,7 @@ metadata:
   name: cache-loader
 spec:
   # kubectl create job --from=cronjob/cache-loader cache-loader-001 -n onix-v2-production
-  suspend: false
+  suspend: true
   schedule: "1 * * * *"
   jobTemplate:
     spec:
